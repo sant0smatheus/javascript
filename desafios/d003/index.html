@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            border: 1px solid black;
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            text-align: center;
+            align-content: center;
+            font: bold 1em Arial;
+            background-color: lightgray;
+        }
+
+        div:hover {
+            background-color: gray;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+
+    <div onclick="clicar()">Antecessor e Sucessor</div>
+
+    <script>
+        function clicar() {
+            var num = Number(window.prompt('Digite um número inteiro qualquer.'))
+
+            var ant = num - 1
+
+            var suc = num + 1
+
+            window.alert(`Antes de ${num}, temos o número ${ant}.\nDepois de ${num}, temos o número ${suc}.`)
+        }
+        
+    </script>
+</body>
+</html>
